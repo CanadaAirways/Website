@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Airline</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">Your Airline</div>
+        <nav>
+            <ul>
+                <li><a href="#flights">Flights</a></li>
+                <li><a href="#booking">Booking</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Fly with Us</h1>
+        <p>Your journey begins here.</p>
+        <a href="#booking" class="btn">Book Now</a>
+    </section>
+
+    <section id="flights" class="flights">
+        <h2>Available Flights</h2>
+        <div class="flight-card">
+            <h3>Flight 101</h3>
+            <p>Destination: New York</p>
+            <p>Departure: 10:00 AM</p>
+            <p>Duration: 5h 30m</p>
+            <a href="#" class="btn">View Details</a>
+        </div>
+        <div class="flight-card">
+            <h3>Flight 202</h3>
+            <p>Destination: London</p>
+            <p>Departure: 2:00 PM</p>
+            <p>Duration: 8h 15m</p>
+            <a href="#" class="btn">View Details</a>
+        </div>
+        <div class="flight-card">
+            <h3>Flight 303</h3>
+            <p>Destination: Tokyo</p>
+            <p>Departure: 8:00 PM</p>
+            <p>Duration: 12h 45m</p>
+            <a href="#" class="btn">View Details</a>
+        </div>
+    </section>
+
+    <section id="booking" class="booking">
+        <h2>Book Your Flight</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <input type="text" placeholder="Destination" required>
+            <input type="date" required>
+            <button type="submit" class="btn">Book Now</button>
+        </form>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>We are committed to providing the best travel experience. Our team is dedicated to ensuring your safety and comfort throughout your journey.</p>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions, feel free to reach out!</p>
+        <p>Email: support@yourairline.com</p>
+        <p>Phone: +1 234 567 8901</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Your Airline. All rights reserved.</p>
+    </footer>
+</body>
+</html>
