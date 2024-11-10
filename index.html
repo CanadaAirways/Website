@@ -16,6 +16,7 @@
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
+            background-color: #f5f5f5;
         }
 
         /* Header and Navigation */
@@ -56,16 +57,8 @@
             background-color: #e6f2ff;
         }
 
-        #about {
+        #flights {
             background-color: #f2f2f2;
-        }
-
-        #contact {
-            background-color: #e6ffe6;
-        }
-
-        #book {
-            background-color: #fff0f0;
         }
 
         /* Footer */
@@ -76,32 +69,27 @@
             padding: 20px;
         }
 
-        /* Form Styles */
-        form {
-            max-width: 400px;
+        /* Table Styles */
+        table {
+            width: 80%;
             margin: 0 auto;
+            border-collapse: collapse;
+            margin-top: 20px;
         }
 
-        input, textarea {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #ccc;
-            border-radius: 5px;
+        th, td {
+            padding: 15px;
+            border: 1px solid #ddd;
+            text-align: center;
         }
 
-        button {
-            padding: 10px 20px;
+        th {
             background-color: #0056b3;
             color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s;
         }
 
-        button:hover {
-            background-color: #0073e6;
+        td {
+            background-color: #e6f2ff;
         }
     </style>
 </head>
@@ -111,56 +99,64 @@
     <!-- Header -->
     <header>
         <h1>Air Canada Clone</h1>
-        <p>Your journey starts here!</p>
+        <p>Your journey starts here! Welcome to our airline service.</p>
     </header>
 
     <!-- Navigation -->
     <nav>
         <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-        <a href="#book">Book Now</a>
+        <a href="#flights">Flights</a>
     </nav>
 
     <!-- Home Section -->
     <section id="home">
         <h2>Welcome to Air Canada</h2>
-        <p>Find the best flights and travel deals here.</p>
-        <form>
-            <input type="text" placeholder="From" required>
-            <input type="text" placeholder="To" required>
-            <input type="date" required>
-            <button type="submit">Search Flights</button>
-        </form>
+        <p>We are delighted to have you. Explore our latest flight schedules and plan your next trip with ease.</p>
     </section>
 
-    <!-- About Section -->
-    <section id="about">
-        <h2>About Us</h2>
-        <p>We are a leading airline offering world-class travel experiences. Explore new destinations with our wide range of flights and exceptional service.</p>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
-
-    <!-- Book Now Section -->
-    <section id="book">
-        <h2>Book a Flight</h2>
-        <p>Start your booking process now and enjoy a smooth journey with us.</p>
-        <button>Book Now</button>
+    <!-- Flights Section -->
+    <section id="flights">
+        <h2>Available Flights</h2>
+        <p>Here are the current flight listings. This table can be updated directly on GitHub.</p>
+        <table>
+            <tr>
+                <th>Flight Number</th>
+                <th>Origin</th>
+                <th>Destination</th>
+                <th>Departure Time</th>
+                <th>Arrival Time</th>
+                <th>Status</th>
+            </tr>
+            <tr>
+                <td>AC101</td>
+                <td>Toronto (YYZ)</td>
+                <td>Vancouver (YVR)</td>
+                <td>08:00 AM</td>
+                <td>10:30 AM</td>
+                <td>On Time</td>
+            </tr>
+            <tr>
+                <td>AC202</td>
+                <td>Montreal (YUL)</td>
+                <td>Calgary (YYC)</td>
+                <td>09:15 AM</td>
+                <td>12:45 PM</td>
+                <td>Delayed</td>
+            </tr>
+            <tr>
+                <td>AC303</td>
+                <td>Ottawa (YOW)</td>
+                <td>Halifax (YHZ)</td>
+                <td>11:00 AM</td>
+                <td>01:20 PM</td>
+                <td>On Time</td>
+            </tr>
+        </table>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Air Canada Clone. All rights reserved.</p>
+        <p>&copy; 2024 Air Canada Roblox. All rights reserved.</p>
     </footer>
 
 </body>
